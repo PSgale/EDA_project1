@@ -14,7 +14,7 @@ Read_Data <- function(file_name, date_from, date_till)
     line <- strsplit(line, ";")
     Date_Time_ <- strptime(paste(line[[1]][1] , line[[1]][2]), format="%d/%m/%Y %H:%M:%S")
     
-    if ((Date_Time_ >= data_from) && (Date_Time_ < data_till))
+    if ((Date_Time_ >= data_from) && (Date_Time_ <= data_till))
     {
       if (is.null(Date_Time)) {Date_Time <- Date_Time_} 
       else {Date_Time <- c(Date_Time, Date_Time_)}
