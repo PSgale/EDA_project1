@@ -22,3 +22,4 @@ axis(side=2, cex.axis=cex)
 # Save plot to file
 dev.copy(png, "plot2.png", width=480 , height=480)
 dev.off()
+
